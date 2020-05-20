@@ -12,29 +12,29 @@
 <body>
 	<header class="conteiner">
 			<div class="profile-block">
-				<div title="Мой профиль" class="user-profile linck-block">
-					<a href="#" class="profile-link">
+				<div class="user-profile linck-block"  title="Мой профиль">
+					<a class="profile-link" href="#">
 						<div>
 							<div class="user-name">Zero_D_drak</div>
-	            			<div class="small-text">профиль</div>
-	            		</div>
-        			</a>
+								<div class="small-text">профиль</div>
+						</div>
+					</a>
 				</div>
-				<div title="Мои уведомления" class="notification linck-block">
-					<a href="https://yummyanime.club/profile/notices" class="profile-link"><i class="far fa-bell"></i></a>
+				<div class="notification linck-block"  title="Мои уведомления">
+					<a class="profile-link"  href="https://yummyanime.club/profile/notices"><i class="far fa-bell"></i></a>
 				</div>
-				<div title="Мои сообщения" class="messages linck-block">
-					<a href="https://yummyanime.club/profile/messages/inbox" class="profile-link"><i class="far fa-envelope"></i></a>
+				<div class="messages linck-block" title="Мои сообщения">
+					<a class="profile-link"  href="https://yummyanime.club/profile/messages/inbox"><i class="far fa-envelope"></i></a>
 				</div>
-				<div title="Выйти из профиля" class="logout linck-block">
-					<a href="#" class="profile-link"><i class="fas fa-sign-out-alt"></i></a>
+				<div class="logout linck-block"  title="Выйти из профиля">
+					<a class="profile-link"  href="#"><i class="fas fa-sign-out-alt"></i></a>
 				</div>
 			</div>
 	</header>
 	<nav>
 		<div class="conteiner menu-conteiner">
-			<div class="logo">
-				<a href="https://yummyanime.club/"><img src="css/img/logo.png"></a>
+			<div class="logo-block">
+				<a class="logo" href="https://yummyanime.club/"><img src="css/img/logo.png"></a>
 			</div>
 			<div class="menu-block">
 				<div class="catalog">
@@ -87,19 +87,21 @@
 			</div>
 		</div>
 	</nav>
-	<div class="conteiner search-conteiner">
+	<main class="conteiner">
+		<div class="search-conteiner">
 		<div class="search-block">
-			<input autocomplete="off" class="search" name="input-search" type="text" placeholder="НАЙТИ АНИМЕ ПО НАЗВАНИЮ" value>
-			<input type="submit" class="search-submit" border="0" value>
+			<input class="search" type="text" autocomplete="off" placeholder="НАЙТИ АНИМЕ ПО НАЗВАНИЮ">
+			<input class="search-submit" type="submit">
 		</div>
 	</div>
-	<main class="conteiner">
 		<article>
 			<section class="name-block">
 				<h1>Детективное агентство Хаматора ТВ-1</h1>
 				<div class="prices">
-					<span class="star fas fa-star" title="Детективное агентство Хаматора ТВ-1"></span>
-					<span class="rang" title="Детективное агентство Хаматора ТВ-1">8.90</span>
+					<button class="star" title="Детективное агентство Хаматора ТВ-1"><i class="fas fa-star"></i></button>
+					<button class="rang" title="Детективное агентство Хаматора ТВ-1">8.90</button>
+					<p> (3740 голосов)</p>
+					<button class="my-rang" title="Мой рейтинг"><i class="fas fa-star"></i><span>10</span></button>
 				</div>
 				<span class="alt-name">Hamatora The Animation</span>
 			</section>
@@ -188,7 +190,7 @@
 					<div class="button-trailer">ТРЕЙЛЕР</div>
 				</div>
 				<div class="mein-anime">
-					<div class="anime-video">
+					<div class="anime-video none">
 						<div class="anime-seria-button">
 							<div class="watch button-seria1">1</div>
 							<div class="button-seria2">2</div>
@@ -224,15 +226,44 @@
 							</div>
 						</div>
 					</div>
-					<div class="recomendation none"></div>
-					<div class="viev-list none"></div>
+					<div class="recomendation">
+						
+					</div>
+					<div class="viev-list none">
+						
+					</div>
 					<div class="FAQ-to-wideo">FAQ по проблемам с видео</div>
+					<h3>Понравилось аниме? Поделись с друзьями</h3>
 				</div>
 			</section>
-			<section class="coment-block">coment</section>
+			<section class="coment-block">
+				<div class="coment-menu">
+					<div class="button-anime-video selected">КОМЕНТАРИИ</div>
+					<div class="button-recomendation">РЕЦЕНЗИИ</div>
+				</div>
+				<div class="coment-rules">
+					<p>ПРЕЖДЕ, ЧЕМ ОСТАВЛЯТЬ КОММЕНТАРИЙ, ПРОЧИТАЙТЕ <i class="rules red-text">ПРАВИЛА</i>
+					<p>Комментарий нарушает правила? Жми <i class="fas fa-exclamation-triangle red-text"></i></p>
+					<p>Вы авторизованы как <i class="red-text">zero_D_drak</i> (Штрафные баллы: Нет)</p>
+				</div>
+				<div class="coments">
+					<input autocomplete="off" class="coment" name="input-coment" type="text" placeholder="Текст коментария" maxlength="1000" value>
+				</div>
+			</section>
 		</article>
-		<aside></aside>
+		<aside class="filter">
+			<h3 class="head-filter">Фильтр Аниме</h3>
+		</aside>
+		<aside class="advertising"></aside>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="conteiner">
+			<p>Все видео на сайте предоставлены только для ознакомления и не предполагают скачивание.</p>
+			<p>Техническая поддержка и помощь пользователям: all.yummy.anime@gmail.com</p>
+			<p>Не пишите на почту сайта через ВК, ответы до ВК не доходят!</p>
+			<p>Это просто мой дизайн для сайта Yummy_Anime. Это не плагиат и не создан для продажи сторонним лицам</p>
+		</div>
+	</footer>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
