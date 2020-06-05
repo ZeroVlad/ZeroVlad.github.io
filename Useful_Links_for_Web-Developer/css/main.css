@@ -4,14 +4,26 @@
   padding: 0;
 }
 
+body{
+  color: #c0c0c0;
+  background-color: #000;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100px;
+}
+
 header{
   padding-top: 30px;
   padding-bottom: 60px;
 
   text-align: center;
 
+  color: #fff;
   background-color: #03194e;
 }
+
 
 .header__title{
   margin-top: 60px;
@@ -26,11 +38,13 @@ main{
   margin-top: 10px;
   margin-bottom: 30px;
 
-  background-color: #000;
-
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
+}
+
+main>div>h3{
+  color: #fff;
 }
 
 a{
