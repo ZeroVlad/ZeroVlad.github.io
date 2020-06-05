@@ -9,12 +9,12 @@
 	<script src="https://kit.fontawesome.com/b2b04ec85a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div id="particles-js"></div>
-		<header>
-		   <h1>Полезные ссылки для веб-разработчика</h1>
-		   <p>Программы, сервисы и сайты, которые помогут в работе.</p>
-		</header>
-		<main class="conteiner">
+	<header>
+	   <h1>Полезные ссылки для веб-разработчика</h1>
+	   <p>Программы, сервисы и сайты, которые помогут в работе.</p>
+	</header>
+	<main id="particles-js">
+		<div class="conteiner">
 			<div>
 				<h3>Редакторы кода</h3>
 				<a href="https://code.visualstudio.com/">VS Code</a> – мощный редактор (IDE)<br>
@@ -151,8 +151,12 @@
 				<h3>Обучающая литература</h3>
 				<a rel="noopener" href="https://github.com/azat-io/you-dont-know-js-ru/blob/master/README.md">You Don't Know JS</a> – перевод серии книг по JavaScript.<br>
 			</div>
-		</main>
-	<script src="js/jQwery.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+		</div>
+	</main>
+	<script src="js/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'js/particles.json', function() {
+  			console.log('particles.json loaded...');
+			});
+	</script>
 </body>
