@@ -64,7 +64,7 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 8,
+        speed: 3,
         direction: 'top-right',
         random: false,
         straight: false,
@@ -118,7 +118,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: true,
+    retina_detect: false,
     fn: {
       interact: {},
       modes: {},
