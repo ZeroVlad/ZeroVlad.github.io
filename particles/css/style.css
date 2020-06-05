@@ -9,3 +9,12 @@
 	height: 1000px;
 }
 
+header{
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  text-align: center;
+
+  color: #fff;
+  background-color: #03194e;
+}
