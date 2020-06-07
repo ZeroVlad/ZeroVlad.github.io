@@ -31,18 +31,24 @@ header{
   font-weight: 900;
 }
 
-main{
+.content{
+  position: inherit;
+
   display: grid;
 
+  width: 100%;
+  max-width: 1300px;
   margin-top: 10px;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
 
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
 }
 
-main>div>h3{
+.content>div>h3{
   color: #fff;
 }
 
@@ -50,13 +56,4 @@ a{
   text-decoration: none;
 
   color: #007bff;;
-}
-
-.conteiner{
-  position: inherit;
-
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
 }
