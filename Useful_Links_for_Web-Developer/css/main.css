@@ -21,7 +21,6 @@ header{
   text-align: center;
 
   color: #fff;
-  background-color: #03194e;
 }
 
 
@@ -38,7 +37,7 @@ main{
   margin-top: 10px;
   margin-bottom: 30px;
 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 5fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
 }
